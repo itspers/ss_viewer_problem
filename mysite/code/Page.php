@@ -13,34 +13,34 @@ class Page extends SiteTree
 
     public function menuList()
     {
-        return new ArrayList([
+return new ArrayList([
+    new ArrayData([
+        'Title' => 'Item 1',
+        'Children' => new ArrayList([
             new ArrayData([
-                'Title' => 'Item 1',
+                'Title' => 'Item 1.1',
+            ]),
+            new ArrayData([
+                'Title' => 'Item 1.2',
                 'Children' => new ArrayList([
                     new ArrayData([
-                        'Title' => 'Item 1.1',
+                        'Title' => 'Item 1.2.1',
                     ]),
                     new ArrayData([
-                        'Title' => 'Item 1.2',
+                        'Title' => 'Item 1.2.2',
                         'Children' => new ArrayList([
                             new ArrayData([
-                                'Title' => 'Item 1.2.1',
+                                'Title' => 'Item 1.2.2.1',
                             ]),
                             new ArrayData([
-                                'Title' => 'Item 1.2.2',
-                                'Children' => new ArrayList([
-                                    new ArrayData([
-                                        'Title' => 'Item 1.2.2.1',
-                                    ]),
-                                    new ArrayData([
-                                        'Title' => 'Item 1.2.2.2',
-                                    ]),
-                                ])
+                                'Title' => 'Item 1.2.2.2',
                             ]),
                         ])
                     ]),
                 ])
             ]),
+        ])
+    ]),
             new ArrayData([
                 'Title' => 'Item 2',
                 'Children' => new ArrayList([
